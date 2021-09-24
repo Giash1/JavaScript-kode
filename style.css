@@ -1,0 +1,42 @@
+section{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: auto;
+    color: rgb(255, 127, 159);
+    background-color: blue
+    align-items: center;
+    justify-content: center;
+    transform: rotateX(20px);
+    transition-property: all;
+    
+}
+
+section:hover{
+    border-radius: 360px;
+    color: red;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transform: rotateY(-300px) rotateX(-300deg);
+    font: bold;
+}
+div {
+    border: 5px dotted lawngreen;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    display: flexbox;
+
+
+}
+
+div:hover{
+    transform: translate(-300px, -200px);
+    transition: cubic-bezier(0.215, 0.610, 0.355, 1);
+    background-color: mediumvioletred;
+    border-radius: 360px;
+    color: black;
+
+}
+p{
+    background-color: rgb(49, 66, 138);
+    color: greenyellow;
+    border: 2px solid black;
+    
+}

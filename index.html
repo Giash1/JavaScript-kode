@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JavaScript</title>
+
+<script src="main.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<section>
+    <p id="demo">What can JavaScript Do?</p>
+    <button type="button" onclick="myFunction()">Try it</button>
+    <p id="g" style="display: none;">JavaScript can change HTML attribute values</p>
+    <button type="button" onclick="document.getElementById('g').style='display:block'">Touch me</button>
+
+    <p id="d">In this case JavaScript changes the value of the src of en </p>
+    <button type="button" onclick="document.getElementById('d').style.color='blue'">Click me</button>
+    <button onclick="document.getElementById('f').src='images/light.jpg'">Turn on the light</button>
+
+    <img id="f" src="images/light.jpg" style="width:100px">
+    <p id="j"></p>
+    <script>
+        document.getElementById("j").innerHTML = "My first JavaScript";
+    </script>
+    //JavaScript can "display" data in different ways:
+    <div>
+        <li>Writing into an HTML element, using innerHTML.</li>
+        <li>>Writing into the HTML output using document.write().</li>
+        Writing into an alert box, using window.alert().</li>
+        Writing into the browser console, using console.log()</li>.//
+        <p id="hello"></p>
+        /* to access an html element, The innerHTML property defines the HTML content*/</li>
+        <script>
+            document.getElementById("hello").innerHTML = 6 + 7;
+        </script>
+        /*document.write is used for testing purpose*/
+        <script>
+            document.write(7 + 8);
+        </script>
+        <button type="button" onclick="document.write(8+12)">Try it</button>
+        /* window alert is used for display data*/
+        <script>
+            window.alert(7 + 4);
+        </script>
+        <button type="button" onclick="window.alert(7+4)">Test it</button>
+        /* console is used for debugging purpose.*/
+        <script>
+            console.log(8 + 9);
+        </script>
+
+        <button onclick="window.print()">Print this page</button>
+    </div>
+
+    <div>
+        <p id="demo1"></p>
+        <script>
+            var x, y, z;
+            x = 5;
+            y = 6;
+            z = x + y;
+            document.getElementById("demo1").innerHTML = "The value of the z is " + z + ".";
+        </script>
+    </div>
+
+    <p id="demo2"></p>
+    <script>
+        let a, b, c;
+        a = 5;
+        b = 6;
+        c = x + y;
+        document.getElementById("demo2").innerHTML = c;
+    </script>
+    <div>
+        <p id="demo3"></p>
+        <p id="demo4"></p>
+        <button type="button" onclick="myFunction()">Press me</button>
+    </div>
+
+    <div>
+        var: Declares a variable
+        let: Declares a block variable
+        const: Declares a block constant
+        if: Marks a block of statements to be executed on a condition
+        switch: Marks a block of statements to be executed in different cases
+        for: Marks a block of statements to be executed in a loop
+        function: Declares a function
+        return: Exits a function
+        try: Implements error handling to a block of statements
+    </div>
+
+    <p>
+        3number can be written with or without decimel
+        10.50
+        1001
+        # Strings are text and can be written within double or single quotes.
+        "John Deo"
+        'John Deo'
+    </p>
+
+    <p id="demo5"></p>
+
+    <script>
+        let x;
+        x = 6;
+        document.getElementById("demo5").innerHTML = x;
+    </script>
+
+    <div>
+        <p id="demo6"></p>
+        <script>
+            document.getElementById("demo6").innerHTML = (5 + 6) * 10;
+        </script>
+    </div>
+
+    <p id="demo7"></p>
+    <script>
+        let x, y;
+        x = 50;
+        y = 600;
+        document.getElementById("demo7").innerHTML = x + y;
+    </script>
+
+    <p id="demo8"></p>
+    <script>
+        document.getElementById("demo8").innerHTML = "John" + " " + "Do";
+    </script>
+
+    <p id="demo9"></p>
+    <script>
+        let x, y;
+        x = 5 + 9;
+        y = x * 9;
+        document.getElementById("demo9").innerHTML = y;
+    </script>
+    <div>
+        Three ways to declare the javascript variable:
+        .Using var;
+        .Using let;
+        .Using const;
+
+        //var
+        <p id="demo10"></p>
+        <script>
+            var x = 5;
+            var y = 9;
+            var z = x + y;
+            document.getElementById("demo10").innerHTML = "The value of z is: " + z;
+        </script>
+    </div>
+    <div>
+        The equal sign "=" is a assingment operator in Javascript and "==" or "===" is a equal sing.
+        # text values are called "text strings" that indicate with single or dubble quotes. number is witout queto.
+
+        <p id="demo11"></p>
+
+        <script>
+            var pi = 3.14;
+            var person = "John Doe";
+            var answer = 'Yes I am!';
+
+            document.getElementById("demo11").innerHTML =
+                pi + "<br>" + person + "<br>" + answer;
+        </script>
+    </div>
+
+    <div>
+        <p id="demo12"></p>
+        <script>
+            var carName = "VolVo";
+            var carPrice = 30000;
+            var carModel = 2012;
+            var carOwner = 8;
+            document.getElementById("demo12").innerHTML = carName + "<br>" + carPrice + "<br>" + carModel + "<br>" + carOwner;
+        </script>
+    </div>
+
+    <div>
+        <p id="demo13">The result of adding</p>
+        <script>
+            var x = "5" + 2 + 3;
+            document.getElementById("demo13").innerHTML = x;
+        </script>
+    </div>
+
+    <div>
+        <p id="demo14">
+            <script>
+                var x = 2 + 3 + "5"
+                document.getElementById("demo14").innerHTML = x;
+            </script>
+    </div>
+
+    <div>
+        <p>The dollar sign is treated as a letter in JavaScript names.</p>
+        <p id="demo15"></p>
+        <script>
+            var $ = 2;
+            var $myMoney = 5;
+            document.getElementById("demo").innerHTML = $ + $myMoney;
+        </script>
+        </p>
+    </div>
+
+    <div>
+        <p id="demo16">
+            <script>
+                const cars = ["Saab", "Volvo", "BMW"];
+                cars[0] = "Toyota";
+                cars.push("Audi");
+                document.getElementById("demo16").innerHTML = cars;
+            </script>
+
+        </p>
+    </div>
+    <div>
+        <p id="demo17"></p>
+    </div>
+    <script>
+        const car = { type: "Fiat", model: "500", color: "bluie" };
+        car.color = "white";
+        car.owner = "Don";
+        document.getElementById("demo17").innerHTML = "car owner is" + car.owner;
+    </script>
+
+    <div>
+        <p id="demo18"></p>
+        <script>
+            let x = 90;
+            let y = 2;
+            let z = x + y;
+            document.getElementById("demo18").innerHTML = z;
+        </script>
+    </div>
+    <p id="demo19"></p>
+    <script>
+        var x = 30;
+        x += 5;
+        document.getElementById("demo19").innerHTML = x;
+    </script>
+    <div>
+        <p id="demo20"></p>
+        <script>
+            let text1 = "John";
+            let text2 = "Doe";
+            let text3 = text1 + " " + text2;
+            document.getElementById("demo20").innerHTML = text3;
+        </script>
+    </div>
+    <div>
+        <p id="demo21"></p>
+        <script>
+            let text2 = "What a very";
+            let += "nice day";
+            document.getElementById("demo21").innerHTML = text2;
+        </script>
+    </div>
+    <div>
+        <p id="demo22"></p>
+        <script>
+            let x = 5 + 5;
+            let y = "5" + 5;
+            let z = "Hello" + 5;
+            document.getElementById("demo22").innerHTML = z;
+        </script>
+    </div>
+
+    <p id="dem23"></p>
+
+<script>
+let x = 5;
+let y = 5;
+let z = 6;
+
+document.getElementById("demo23").innerHTML =
+(x == y) + "<br>" + (x == z);
+</script>
+
+
+</section>
+</body>
+
+</html>
